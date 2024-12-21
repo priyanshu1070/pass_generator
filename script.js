@@ -15,7 +15,7 @@ btn.onclick=click;
 function click(){
     let result = "";
     let passlength = passLength.value;
-    if (passlength<1777){
+    if (passlength<1){
         window.alert("Passlength less than 1 asn't allowed.");
     }
     let allowedChar="";
