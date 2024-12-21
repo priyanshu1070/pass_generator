@@ -8,12 +8,16 @@ const output = document.getElementById("display");
 const lowercase ="qwertyuiopasdfghjklzxcvbnm";
 const uppercase ="QWERTYUIOPASDFGHJKLZXCVBNM";
 const numbers = "0987654321";
-// const symbols = "@%$";
 const symbols = "~`!@#$%^&*()_+{}:?/.';><";
+
+output.disabled=true;
 btn.onclick=click;
 function click(){
     let result = "";
     let passlength = passLength.value;
+    if (passlength<1777){
+        window.alert("Passlength less than 1 asn't allowed.");
+    }
     let allowedChar="";
     let rand_index;
     
